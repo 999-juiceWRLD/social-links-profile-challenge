@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-color: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("assets/fonts/static/Inter-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("assets/fonts/static/Inter-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body, main, .card, .info, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    flex: 1;
+}
+
+main div,
+main div p,
+main div img,
+main div h1,
+.card {
+    background-color: hsl(0, 0%, 12%)
+}
+
+.card {
+    border-radius: 1rem;
+    padding: 1.8rem 0;
+}
+
+.info {
+    text-align: center;
+}
+
+.info > img {
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 9rem;
+    padding-bottom: 1rem;
+}
+
+.name {
+    font-size: 1.5rem;
+}
+
+.location {
+    color: hsl(75, 94%, 57%);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.socials {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    width: 80%;
+}
+
+.socials > p {
+    padding: 1rem 2rem;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 0.5rem;
+    transition: background-color 0.6s;
+}
+
+.socials p:hover {
+    color: hsl(0, 0%, 12%);
+    background-color: hsl(75, 94%, 57%);
+}
+
+footer {
+    width: 100%;
+    background-color: white;
+}
+
+@media (max-width: 640px) {
+    .card {
+        width: 75%;
+    }
+}
+
+@media (min-width: 640px) {
+    .card {
+        width: 33%;
+    }
+}
+
+@media (max-width: 940px) {
+    .card {
+        width: 45%;
+    }
+}
